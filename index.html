@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WiFi Atalaya — Privacy Policy</title>
+<title>WiFi Atalaya Privacy Policy</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
          line-height: 1.6; color: #1d1d1f; max-width: 720px; margin: 40px auto; padding: 0 20px; }
@@ -16,52 +16,50 @@
 </head>
 <body>
   <h1>Privacy Policy for WiFi Atalaya</h1>
-  <p class="meta">Effective date: June 29, 2026</p>
+  <p class="meta">Effective date: September 30, 2026</p>
 
-  <p>WiFi Atalaya ("the app") is a read-only macOS console for Juniper Mist Wi-Fi
-  environments. This policy explains what the app does and does not do with your data.
-  The short version: the app does not have its own servers, and it does not collect,
-  transmit, or sell your personal data to us or to any third party other than the
-  Juniper Mist service you explicitly connect to.</p>
+  <p>WiFi Atalaya ("the app") is a Mac and iPhone app for managing Wi-Fi networks on
+  Juniper Mist. This policy explains what the app does with your data. The developer runs
+  no servers of its own and does not sell your data.</p>
 
   <h2>Information the app works with</h2>
-  <p>To function, the app uses a Juniper Mist API token that you provide. Using that
-  token, the app retrieves operational network data from Mist's API, which may include
-  site and organization details, service-level metrics, access point health, SSID
-  information, and client records such as MAC addresses, IP addresses, usernames, and
-  device types. This information is displayed to you within the app so you can monitor
-  and troubleshoot your own network.</p>
+  <p>The app uses a Juniper Mist API token that you provide. With it, the app reads data
+  from the Mist API, such as organization and site details, service-level metrics, access
+  point status, Wi-Fi network settings, and client records like MAC addresses, IP
+  addresses, usernames and device types. If your token allows it, the app also changes
+  settings in your Mist organization when you ask it to, for example when you add, rename
+  or restart an access point.</p>
 
   <h2>Where your data goes</h2>
-  <p>The app communicates directly from your Mac to the Juniper Mist API. Your API token
-  and the data it retrieves are not sent to the developer or to any other third-party
-  server. The developer operates no backend service that receives your data.</p>
+  <p>The app talks directly to the Juniper Mist API. Your API token and the network data
+  it reads are not sent to the developer.</p>
 
   <h2>How your API token is stored</h2>
-  <p>Your Mist API token is stored locally on your device using the macOS Keychain. It is
-  used only to authenticate your requests to the Juniper Mist API and is never
-  transmitted anywhere other than to Mist.</p>
+  <p>The token is saved in a file in the app's own storage on your Mac or iPhone. It is
+  only sent to the Juniper Mist API, to authenticate your requests.</p>
 
   <h2>Local caching</h2>
-  <p>To respect Mist's API rate limits, the app may temporarily cache responses locally on
-  your device. This cached data remains on your Mac and is not transmitted off-device.</p>
+  <p>To stay within Mist's API rate limits, the app may keep recent responses on your
+  device. They are not sent anywhere.</p>
 
-  <h2>Analytics and tracking</h2>
-  <p>The app does not use third-party analytics, advertising, or tracking SDKs. It does
-  not build advertising profiles or track you across other apps or websites. Apple may
-  provide the developer with aggregate, anonymized usage and crash data only if you have
-  opted in to sharing analytics at the macOS system level; this data is controlled by
-  Apple and does not personally identify you.</p>
+  <h2>Analytics</h2>
+  <p>The app uses Google Firebase Analytics to see which screens and actions are used.
+  An event records the screen or action, the organization and site names and IDs, the
+  access level of your token, and the access point model. Events never contain your API
+  token, MAC addresses, IP addresses or other client data. The app also reads its
+  feature settings from Google Firebase using an anonymous sign-in. Apple may share crash
+  and usage data with the developer if you opted in to sharing analytics with app
+  developers in your device settings.</p>
 
   <h2>Third-party services</h2>
-  <p>The app connects to the Juniper Mist service on your behalf. Your use of Mist is
-  governed by Juniper's own privacy and data practices. Please refer to Juniper Networks'
-  privacy documentation for details on how Mist handles data.</p>
+  <p>Your use of Juniper Mist is governed by Juniper Networks' privacy practices.
+  Analytics data is handled by Google under the Firebase terms and Google's privacy
+  policy.</p>
 
   <h2>Data retention and deletion</h2>
-  <p>Because your data stays on your device, you remain in control of it. You can remove
-  the stored API token and any cached data at any time by clearing it within the app or
-  by removing the app from your Mac.</p>
+  <p>You can remove the stored token and cached data by signing out in the app or by
+  deleting the app. Analytics data is kept by Google Firebase for its configured
+  retention period.</p>
 
   <h2>Children's privacy</h2>
   <p>The app is intended for IT and networking professionals and is not directed to
